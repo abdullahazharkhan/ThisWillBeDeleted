@@ -41,7 +41,7 @@ int main()
     // vector<xd> vec = {xd(1), xd(2), xd(3)};
     // vec.push_back(xd(4));
     // vec[4].x = 5;
-
+    // vector<int> v(4);
     // vector<int> v4(5, 100);
 
     // for(int i = 0; i < v4.size(); i++)
@@ -52,10 +52,12 @@ int main()
     // vector<int> v5(4);
     // v5.resize(10);
 
+    // vector< vector<int> > twoD(4, vector<int>(4));
+
     // vector<vector<int>> v(5, vector<int>(4));
     // v[4][4] = 4;
 
-    vector<int> v = {1,5,6,7,52,5,2,5,2,3};
+    vector<int> v = {1, 5, 6, 7, 52, 5, 2, 5, 2, 3};
     // for(int i = 0; i < v.size(); i++)
     // {
     //     cout << v[i] << " ";
@@ -66,13 +68,13 @@ int main()
     // {
     //     cout << v[i] << " ";
     // }
-    // v.insert(v.begin() + 2, 10);
+    v.insert(v.begin() + 2, 4, 10);
     // cout << endl;
 
-    // for (int i = 0; i < v.size(); i++)
-    // {
-    //     cout << v[i] << " ";
-    // }
+    for (int j = 0; j < v.size(); j++)
+    {
+        cout << v[j] << " ";
+    }
 
     return 0;
 }
